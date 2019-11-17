@@ -26,21 +26,29 @@ public class Operators {
         int age = 44;
 //        utworzenie obiektu SCanner pozwalajcacego na wprowadzenie warosci do konsoli -> System.in
         Scanner scanner = new Scanner(System.in);
+
 //        uzytkownik wprowdza do zmiennej age typu int metoda nextInt()
+
         System.out.println("Wprowadź swój wiek: ");
         age = scanner.nextInt();
 
 //        uzytkownik wprowadza wartosc zdo mziennej age
 
-        String isMature = age >= 18 ? "użytkownik jest pełnoletni: " : "nie jesteś pełnoletni";
+//        String isMature = age >= 18 ? "użytkownik jest pełnoletni " : "nie jesteś pełnoletni";
 
 //        System.out.println("Twój wiek to: " + age + " - " + isMature); POWTÓRZYC!!!!!
 
-        System.out.printf("Twój wiek to: %d - %s\n",  age, isMature);
-//        czy wiek zawiera się od 0 - 120 jesli tak to jestes człowiekiem jesli nie orbotem
+//        System.out.printf("Twój wiek to: %d - %s\n", age, isMature);
+//        czy wiek zawiera się od 0 - 120 jesli tak to jestes człowiekiem jesli nie to orbotem
 
-        String isHuman  = age <= 120 ? "jesteś człowiekiem" : "jesteś robotem";
-        System.out.println(isHuman);
+//        String isHuman = age >= 0 && age <= 120 ? "jesteś człowiekiem" : "jesteś robotem";
+//        System.out.println(isHuman);
+
+        boolean isHuman = age >= 0 && age <= 120 ? true : false;
+
+
+        String isMature = age >= 18 ? "jesteś dorosły" : "nie jesteś dorosły";
+        System.out.println(isHuman ? isMature : "ROBOT");
 
     }
 }
