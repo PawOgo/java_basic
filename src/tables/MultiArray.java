@@ -20,6 +20,8 @@ public class MultiArray {
                 {1, 1, 1},
                 {2, 2, 2, 2, 2},
                 {3, 3, 3, 3, 3, 3},
+                {4, 4, 4, 4, 4, 4, 4, 4, 4},
+                {10, 10, 10, 10, 10, 10, 10},
         };
         System.out.println();
         for (int i = 0; i < numbers.length; i++) {
@@ -43,16 +45,6 @@ public class MultiArray {
         //    j = 3 | 3 < 5 -> truse | i++ 1 1 1 1
         //    j = 4 | 4 < 5 -> truse | i++ 1 1 1 1 1
         //    j = 5 | 5 < 5 -> false | i++ 1 1 1 1 1 \n
-
-
-
-
-
-
-
-
-
-
 
 
 
